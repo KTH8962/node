@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('css.ejs') %>
+</head>
+<body>    
+    <form action="/user" method="POST">
+        <div>
+            아이디 :
+            <input type="text" name="id">
+        </div>
+        <div>
+            비밀번호 :
+            <input type="password" name="pwd">
+        </div>
+        <div>
+            이름 :
+            <input type="text" name="name">
+        </div>
+        <div>성별:
+            <input type="radio" name="gender" value="M" id="M"><label for="M">남</label>
+            <input type="radio" name="gender" value="F" id="F"><label for="F">여</label>
+        </div>
+        <button type="submit">가입</button>
+    </form>
+</body>
+</html>

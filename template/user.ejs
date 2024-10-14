@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%-include('css.ejs') %>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>아이디</th>
+            <th>이름</th>
+            <th>성별</th>
+        </tr>
+        <% user.forEach( item =>{ %>
+            <tr>
+                <td>
+                    <%= item.id %>                    
+                </td>
+                <td><%= item.name %></td>
+                <td><% if(item.gender === 'M') { %> 남 <% } else { %> 여 <% } %></td>
+            </tr>
+        <% }) %>
+    </table>
+    <button type="button">글쓰기</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('css.ejs') %>
+</head>
+<body>        
+    <form action="/student" method="POST">
+        <div>
+            학번 :
+            <input type="text" name="stuNo">
+        </div>
+        <div>
+            이름 :
+            <input type="text" name="stuName">
+        </div>
+        <div>
+            학과 :
+            <input type="text" name="stuDept">
+        </div>
+        <div>학년:
+            <input type="text" name="stuGrade">
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</body>
+</html>
